@@ -1,0 +1,37 @@
+.animatedLogo {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+    width: fit-content;
+}
+
+.underline {
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin: 2px 1px;
+
+    /* This is the only way it shows lol */
+    font-size: 0;
+
+    animation: grow 4s;
+    animation-iteration-count: 1;
+
+    background-color: red;
+    transition: 0.6s ease-in-out;
+}
+
+.animatedLogo:hover .underline {
+    width: 5px;
+    transition: 0.2s ease-in;
+}
+
+
+@keyframes grow {
+0% {
+    width: 1%;
+}    
+100% {
+    width: 98%;
+}
+}
