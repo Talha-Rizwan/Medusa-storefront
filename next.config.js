@@ -8,7 +8,7 @@ module.exports = withStoreConfig({
   images: {
     domains: ["medusa-public-images.s3.eu-west-1.amazonaws.com", "localhost"],
   },
+  i18n
 })
-i18n
 
 console.log("next.config.js", JSON.stringify(module.exports, null, 2))
